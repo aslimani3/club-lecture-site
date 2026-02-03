@@ -1,0 +1,309 @@
+/* ---------------------------------
+   FICHIER CSS - TP2 Club de lecture
+   --------------------------------- */
+
+   @charset "UTF-8";
+
+
+/* EN-TÊTE (HEADER) */
+
+header {
+  background-color: #2c5f8d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+header h1,
+header h2 {
+  margin: 5px 0;
+}
+
+/* PIED DE PAGE (FOOTER) */
+
+footer {
+  background-color: #404142;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  color:#4da6ff;
+  text-decoration: none;
+}
+
+/* bordure principale */
+.container,
+body > .wrap,
+body > .container {
+max-width: 1100px;
+margin: 2rem auto;
+padding: 1.5rem 2rem;
+border: 1px solid #d9d9d9;
+background-color: #fff;
+}
+
+/* Disposition des 3 divisions du pied de page avec flexbox (creation d'une classe flexbox) */
+.f-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Creation d'une classe f-box */
+
+.f-box {
+  flex: 1;
+}
+
+
+
+
+
+/* LISTE DE NOUVEAUTÉS (index.html) */
+
+.nouveautes {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nouveautes li {
+  margin-bottom: 15px;
+}
+
+/* LECTURE EN COURS - Disposition flexbox (index.html et encours.html) */
+.reading-flex {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.reading-flex img {
+  max-width: 200px;
+  height: auto;
+}
+
+.meta {
+  flex: 1;
+}
+
+.meta cite {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.meta dl {
+  margin: 0;
+}
+
+.meta dt {
+  font-weight: bold;
+  display: inline;
+}
+
+.meta dt::after {
+  content: " : ";
+}
+
+.meta dd {
+  display: inline;
+  margin: 0 0 5px 0;
+}
+
+.meta dd::after {
+  content: "";
+  display: block;
+}
+
+/* APPRÉCIATIONS DES LECTEURS (encours.html) */
+
+
+/* Retirer la bordure uniquement pour la page d'appréciation */
+.no-border {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
+
+
+
+.review {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+/* En-tête de l'appréciation */
+.r-head {
+  background-color: #4a7ba7;
+  color: white;
+  padding: 10px 15px;
+}
+
+/* Couleur des étoiles  */
+.r-head .bi-star-fill {
+  color:hsl(208, 38%, 47%);
+}
+
+.bi-star-fill {
+  color:#4a7ba7
+}
+
+/* Corps de l'appréciation */
+.r-body {
+  padding: 15px;
+}
+
+/* Citation dans l'appréciation */
+.r-quote {
+  background-color: #d4e3f0;
+  padding: 15px;
+  margin: 15px 0 15px 30px;
+  border-radius: 8px;
+}
+
+/* Guillemets  */
+.r-quote::before {
+  content: "« ";
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.r-quote::after {
+  content: " »";
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Pied de l'appréciation */
+.r-foot {
+  background-color: #6b8caf;
+  color: white;
+  padding: 8px 15px;
+  font-size: 0.9em;
+}
+
+/* TABLEAU (encours.html) */
+
+.table-news {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.table-news th,
+.table-news td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.table-news th {
+  background-color: hsl(208, 38%, 47%);
+  color: white;
+}
+
+/* Effet hover sur les lignes du tableau */
+.table-news tbody tr:hover {
+  background-color: #e8e8e8;
+}
+
+/* LECTURES PRÉCÉDENTES (precedentes.html) */
+
+.prev-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.prev-item img {
+  max-width: 150px;
+  height: auto;
+}
+
+.prev-item figcaption {
+  flex: 1;
+  display: none;
+}
+
+.prev-item figcaption small {
+  font-size: 0.85em;
+  color: #666;
+}
+
+/* CONDITIONS D'UTILISATION (conditions.html) */
+
+section h3 {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 15px;
+}
+
+section ol {
+  line-height: 1.8;
+}
+
+section ol li {
+  margin-bottom: 10px;
+}
+
+/* DISPOSITION ASIDE À DROITE (index.html et encours.html)*/
+
+main.two-cols {
+  display: flex;
+  gap: 30px;
+}
+
+main.two-cols section {
+  flex: 2;
+  padding-right: 20px;
+  border-right: 2px solid #ddd;
+}
+
+main.two-cols aside {
+  flex: 1;
+  padding-left: 20px;
+}
+
+/* CARROUSEL - Images centrées */
+.carousel-item img {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  height: auto;
+}
+
+/* Vidéo YouTube responsive dans l'aside (encours.html) */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Bloc des étoiles sous le bandeau du nom */
+.r-stars {
+  padding: 8px 15px 0 15px;
+}
+
+.r-stars .bi-star-fill {
+  color: hsl(208, 38%, 47%);
+}

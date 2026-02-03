@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Lecture en cours</title>
+
+  <!-- Bootstrap + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="tp2_css_style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- MENU DE NAVIGATION PRINCIPAL -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light my-3">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index2.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="encours.html">Lecture en cours</a></li>
+          <li class="nav-item"><a class="nav-link" href="precedentes.html">Lectures précédentes</a></li>
+          <li class="nav-item"><a class="nav-link" href="inscription.html" target="_blank">Inscription</a></li>
+          <li class="nav-item"><a class="nav-link" href="appreciation.html" target="_blank">Appreciation</a></li>
+          <li class="nav-item"><a class="nav-link" href="conditions.html">Conditions d'utilisation</a></li>
+          <li class="nav-item"><a class="nav-link" href="http://www-ens.iro.umontreal.ca/~slimanak/tp2dz123/index2.html">Site public</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ENTÊTE -->
+    <header>
+      <div>
+        <h1><strong>Club de lecture</strong> <em>Les Lecteurs de l'UdeM</em></h1>
+        <h2>Partager nos lectures sur le campus</h2>
+      </div>
+    </header>
+
+    <!-- CONTENU -->
+    <main class="two-cols">
+      <!-- COLONNE GAUCHE : lecture + avis -->
+      <section>
+        <h3>Lecture en cours</h3>
+
+        <div class="reading-flex">
+          <img src="imagestp/housemaid.jpg" alt="La femme de ménage">
+          <div class="meta">
+            <cite>La femme de ménage</cite>
+            <dl>
+              <dt>Auteur</dt><dd>Freida McFadden</dd>
+              <dt>Éditeur</dt><dd>City Edition</dd>
+              <dt>Année</dt><dd>2025</dd>
+              <dt>Pages</dt><dd>304</dd>
+              <br>
+              <dd>
+                <a href="appreciation.html" class="btn btn-primary" target="_blank">
+                  Publiez votre appréciation de ce livre
+                </a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+
+        <h3 class="mt-4">Appréciation de nos lecteurs</h3>
+
+        <!-- Avis 1 -->
+        <article class="review">
+          <div class="r-head">
+            <span class="fw-bold">lilabacaxi</span>
+          </div>
+
+          <div class="r-stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+
+          <div class="r-body">
+            Amiante est un roman parfois exigeant, et c’est justement ce que j’ai apprécié.
+            J’ai également beaucoup aimé l’intégration de repères culturels caractéristiques
+            des époques évoquées dans le récit. Un excellent premier roman !
+            <div class="r-quote">
+              La poussière fibreuse de la ville d’amiante se soulevait sous nos pas et se
+              fichait en une pellicule grise et crayeuse contre notre sueur. Nos mollets
+              étaient couverts de ce talc qu’on dit cancérigène – pays de l’or blanc.
+            </div>
+          </div>
+
+          <div class="r-foot">
+            <time datetime="2025-03-17">17 mars 2025</time>
+          </div>
+        </article>
+
+        <!-- Avis 2 -->
+        <article class="review">
+          <div class="r-head">
+            <span class="fw-bold">annebanane</span>
+          </div>
+
+          <div class="r-stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+
+          <div class="r-body">
+            Ça vaut la peine d’être lu. Cependant, c’est dur comme lecture, douloureux.
+          </div>
+
+          <div class="r-foot">
+            <time datetime="2025-02-10">10 février 2025</time>
+          </div>
+        </article>
+
+        <!-- Avis 3 -->
+        <article class="review">
+          <div class="r-head">
+            <span class="fw-bold">Mr.cp546</span>
+          </div>
+
+          <div class="r-stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+
+          <div class="r-body">
+            Un bon roman, mais j’ai trouvé quelques longueurs au milieu du récit.
+          </div>
+
+          <div class="r-foot">
+            <time datetime="2025-01-22">22 janvier 2025</time>
+          </div>
+        </article>
+      </section>
+
+      <!-- COLONNE DROITE : médias + vidéo -->
+      <aside>
+        <h3>Ce que les journaux ont écrit</h3>
+
+        <table class="table-news">
+          <thead>
+            <tr>
+              <th>Média</th>
+              <th>Date de publication</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="#">La Presse</a></td>
+              <td>10 août 2024</td>
+            </tr>
+            <tr>
+              <td><a href="#">Le Devoir</a></td>
+              <td>17 août 2024</td>
+            </tr>
+            <tr>
+              <td><a href="#">Radio-Canada</a></td>
+              <td>29 novembre 2024</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="text-end">
+          <a href="#">Articles sur la lecture en cours</a>
+        </p>
+
+        <h3 class="mt-4">Entrevue avec l'auteur</h3>
+
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/xf3UMKJlYw4"
+            title="Entrevue avec l'auteur"
+            referrerpolicy="strict-origin-when-cross-origin"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </aside>
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer>
+      <div class="f-flex">
+        <div class="f-box">
+          <a href="https://validator.w3.org/check?uri=referer"
+             onclick="this.href='https://validator.w3.org/check?uri=' + document.URL">
+            <img src="https://www.w3.org/html/logo/badge/html5-badge-h-semantics.png"
+                 width="133" height="64" alt="HTML5 badge">
+          </a>
+        </div>
+
+        <div class="f-box">
+          <p>© 2025 <a href="conditions.html">Conditions d'utilisation</a></p>
+          <p>Pour nous contacter :
+            <a href="mailto:samy.ouldfella@umontreal.ca">samy.ouldfella@umontreal.ca</a><br>
+            <a href="mailto:anis-kamil.slimani@umontreal.ca">anis-kamil.slimani@umontreal.ca</a>
+          </p>
+          <p>
+            Ce site a été développé dans le cadre du cours
+            <a href="#">IFT1144</a> à
+            <a href="https://www.umontreal.ca/">l’Université de Montréal</a>.
+            Toutes les images ont été empruntées du site de
+            <a href="#">prêt numérique</a> de la ville de Montréal.
+          </p>
+        </div>
+
+        <div class="f-box">
+          <a href="http://jigsaw.w3.org/css-validator/check/referer"
+             onclick="this.href='http://jigsaw.w3.org/css-validator/validator?uri=' + document.URL">
+            <img src="http://www.w3.org/Icons/valid-css.png"
+                 width="133" height="64"
+                 alt="CSS validator" title="CSS validator">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
